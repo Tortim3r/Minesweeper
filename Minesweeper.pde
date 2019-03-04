@@ -15,6 +15,7 @@ void setup ()
     // make the manager
     Interactive.make( this );
     
+    buttons = new MSButton[NUM_ROWS][NUM_COLS];
     //your code to initialize buttons goes here
     
     
