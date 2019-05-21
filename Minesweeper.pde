@@ -103,6 +103,12 @@ public class MSButton
                 marked = true;
                 clicked = false;
             }
+        }else if(bombs.contains(this)){
+            displayLosingMessage();
+        }else if(countBombs(this.r,this.c) > 0){
+            setLabel(""+countBombs(this.r,this.c));
+        }else{
+                
         }
         //your code here
     }
